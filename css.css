@@ -1,0 +1,137 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4b6cb7;
+    box-shadow: 0 0 20px rgba(75, 108, 183, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .foto-perfil:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(75, 108, 183, 0.5);
+  }
+  
+  h1 {
+    color: #3b3f58;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .contacto {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Tarjetas */
+  .card {
+    background-color: #ffffff;
+    border-left: 6px solid #4b6cb7;
+    border-radius: 14px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #3b3f58;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #00bfa6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #4b6cb7;
+    margin-top: 20px;
+  }
+  
+  /* Listas */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 8px;
+    border-radius: 6px;
+  }
+  
+  ul li:hover {
+    background-color: #dce9ff;
+    color: #4b6cb7;
+    transform: translateX(6px);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Habilidades en columnas */
+  .habilidades {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  
+  .habilidades li::before {
+    content: "✔ ";
+    color: #00bfa6;
+    font-weight: bold;
+  }
+  
+  /* Sección de explicación */
+  .explicacion ul li::before {
+    content: "★ ";
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .foto-perfil {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  }
+  
